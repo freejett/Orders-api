@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "a64f43ef-0bb2-4fc2-828b-9eda4f424a7d",
+		"name": "Test work api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22557625"
+	},
+	"item": [
+		{
+			"name": "index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/v1/orders/?page=7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "number",
+							"value": "HN_1234003",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Red pepper",
+							"type": "text"
+						},
+						{
+							"key": "order_sum",
+							"value": "4500",
+							"type": "text"
+						},
+						{
+							"key": "currency_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "paid_at",
+							"value": "2023-09-28",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api/v1/orders/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "number",
+							"value": "HN_1234001",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Абросимов Андрей Александрович",
+							"type": "text"
+						},
+						{
+							"key": "order_sum",
+							"value": "220",
+							"type": "text"
+						},
+						{
+							"key": "currency_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "paid_at",
+							"value": "2023-09-28",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api/v1/orders/102",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"102"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/v1/orders/104",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"104"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/v1/orders/101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"101"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
